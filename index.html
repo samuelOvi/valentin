@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de Modo Oscuro -->
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+
+        <h1 class="titulo-sesion">¡Bienvenida Amor! ❤️</h1>
+        <p>Ingresa nuestra fecha de aniversario para continuar.</p>
+
+        <!-- Formulario 1: Fecha de aniversario -->
+        <form id="form1">
+            <label for="anniversaryDate">Fecha de Aniversario:</label>
+            <input type="date" id="anniversaryDate" required>
+            <button type="submit">Ingresar</button>
+            <p id="error1" class="error-message hidden">esa no es, me quieres poquitico?💔</p>
+        </form>
+
+        <!-- Formulario 2: Pregunta sobre la canción -->
+        <form id="form2" class="hidden">
+            <p>¿Cuál es nuestra canción favorita?</p>
+            <label>
+                <input type="radio" name="song" value="cafune"> Cafuné - Micro TDH
+            </label><br>
+            <label>
+                <input type="radio" name="song" value="bailame"> Bailame - Danny Ocean
+            </label><br>
+            <label>
+                <input type="radio" name="song" value="tuyo"> Tuyo
+            </label><br>
+            <button type="submit">Siguiente</button>
+            <p id="error2" class="error-message hidden">¡Esa no es nuestra canción favorita! 🎶</p>
+        </form>
+
+        <!-- Formulario 3: Pregunta sobre el lugar favorito -->
+        <form id="form3" class="hidden">
+            <p>¿Cuál es nuestro lugar favorito?</p>
+            <label>
+                <input type="radio" name="place" value="perritos"> Perritos a que Heddy
+            </label><br>
+            <label>
+                <input type="radio" name="place" value="segundaCasa"> Nuestra segunda casa (😉)
+            </label><br>
+            <label>
+                <input type="radio" name="place" value="garageChilling"> Garage Chilling
+            </label><br>
+            <label>
+                <input type="radio" name="place" value="chickenDay"> Chicken Day
+            </label><br>
+            <button type="submit">Finalizar</button>
+            <p id="error3" class="error-message hidden">¡No es ese nuestro lugar favorito! 😆</p>
+        </form>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
